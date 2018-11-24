@@ -1,0 +1,48 @@
+html {
+  font-family: "Muli", sans-serif;
+}
+blockquote {
+  min-width: 400px;
+  margin:0;
+}
+blockquote .blockquote-content {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  border-top: 8px solid #f83226;
+  background-color: #fff;
+  position: relative;
+  padding: 10px 20px;
+  min-width: 65%;
+}
+blockquote .blockquote-content:before {
+  width: 250px;
+  height: 250px;
+  display: block;
+  background-color: #BDCDE8;
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0.3;
+  -webkit-transform: translate(30%, 30%);
+  -ms-transform: translate(30%, 30%);
+  -moz-transform: translate(30%, 30%);
+  -o-transform: translate(30%, 30%);
+  transform: translate(30%, 30%);
+  background-position: center center;
+  background-size: auto 50%;
+  background-repeat: no-repeat;
+  background-image: url(http://www.michaelmammoliti.com/_projects/blockquotes/_media/icons/blockquotes.png);
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+blockquote .blockquote-content p {
+  position: relative;
+  font-style: oblique;
+  z-index: 2;
+}
