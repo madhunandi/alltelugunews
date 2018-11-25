@@ -23,7 +23,7 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const tutorialSteps = [
   {
-    message: `I found this website much intersting. The best part is i don't need to visit multiple news sites to see the news. All news at place. Keep evolving. `,
+    message: `I found this website much interesting. The best part is i don't need to visit multiple news sites to see the news. All news at place. Keep evolving. `,
     name: "Rajesh M",
     role: "Software Engineer, United States"
   },

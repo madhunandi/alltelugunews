@@ -43,7 +43,7 @@ const About: React.SFC = () => (
           <small>
           I would like to ask an help to make it more useful. Please feel free to reach me at{" "}
             <EmailLink href="mailto: alltelugunews@gmail.com">
-              alltelugunews@gmail.com
+              alltelugu.news@gmail.com
             </EmailLink>{" "}
             with your suggestions or websites which you feel it must be included in the above list. Thanks.{" "}
           </small>

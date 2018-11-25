@@ -5,6 +5,7 @@ import About from "../components/About";
 import ReactPageScroller from "react-page-scroller";
 import AllMovieNews from "../components/AllMovieNews";
 
+
 export default class Index extends React.Component {
   constructor(props) {
     super(props);

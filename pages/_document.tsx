@@ -6,6 +6,8 @@ import NextDocument, {
   NextScript,
 } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import { GA_TRACKING_ID } from '../lib/utils'
+
 
 interface Meta {
   property: string;
@@ -41,6 +43,20 @@ class Document extends NextDocument {
           {this.scripts.map(content => (
             <script dangerouslySetInnerHTML={{ __html: content }} />
           ))}
+           {/* Global Site Tag (gtag.js) - Google Analytics */}
+           <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}');
+          `}}
+          />
           {this.props.styleTags}
           <link
             href="https://fonts.googleapis.com/css?family=Muli:400,600,700"
